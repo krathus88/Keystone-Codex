@@ -34,10 +34,10 @@ export default defineConfig({
     resolve: {
         alias: {
             "@public": path.resolve(__dirname, "./public"),
-            "@assets": path.resolve(__dirname, "./src/assets"),
-            "@styles": path.resolve(__dirname, "./src/styles"),
-            "@configs": path.resolve(__dirname, "./src/configs"),
-            "@lib": path.resolve(__dirname, "./src/lib"),
+            "@assets": path.resolve(__dirname, "./src/webapp/assets"),
+            "@styles": path.resolve(__dirname, "./src/webapp/styles"),
+            "@configs": path.resolve(__dirname, "./src/webapp/configs"),
+            "@lib": path.resolve(__dirname, "./src/webapp/lib"),
             "@services": path.resolve(__dirname, "./src/services"),
             "@models": path.resolve(__dirname, "./src/models"),
             "@store": path.resolve(__dirname, "./src/store"),

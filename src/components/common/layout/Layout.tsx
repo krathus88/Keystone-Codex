@@ -3,9 +3,8 @@ import { Outlet } from "@tanstack/react-router"
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools"
 import { Footer } from "./footer/Footer"
 import { Header } from "./header/Header"
-import { memo } from "react"
 
-export const Layout = memo(() => {
+export const Layout = () => {
     return (
         <Flex
             id="Layout"
@@ -24,4 +23,4 @@ export const Layout = memo(() => {
             <TanStackRouterDevtools />
         </Flex>
     )
-})
+}

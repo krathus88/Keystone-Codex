@@ -1,7 +1,7 @@
 import { defaultTheme } from "@styles/index"
 import { createRouter, RouterProvider } from "@tanstack/react-router"
 import { Provider } from "@ui/provider"
-import { routeTree } from "./routeTree.gen"
+import { routeTree } from "../routeTree.gen"
 
 // Create a new router instance
 const router = createRouter({

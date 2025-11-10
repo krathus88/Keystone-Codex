@@ -16,14 +16,14 @@ export const Header = () => {
             borderBottom="1px solid"
             borderColor="border.main"
         >
-            <ChakraLink asChild>
+            <ChakraLink asChild textDecoration={"none"}>
                 <TanstackLink to="/">
                     <H1 px={2}>Keystone Codex</H1>
                 </TanstackLink>
             </ChakraLink>
 
             <Flex as="nav" gap={2} alignItems={"center"}>
-                <ChakraLink asChild>
+                <ChakraLink asChild textDecoration={"none"}>
                     <TanstackLink
                         to={"/map/$map"}
                         params={{ map: map ?? DEFAULT_SELECTED_DUNGEON }}
@@ -33,7 +33,7 @@ export const Header = () => {
                     </TanstackLink>
                 </ChakraLink>
 
-                <ChakraLink asChild>
+                <ChakraLink asChild textDecoration={"none"}>
                     <TanstackLink
                         to={"/map/$map/notes"}
                         params={{ map: map ?? DEFAULT_SELECTED_DUNGEON }}

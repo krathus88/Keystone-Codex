@@ -32,10 +32,10 @@
 
         "paths": {
             "@public/*": ["./public/*"],
-            "@assets/*": ["./src/assets/*"],
-            "@styles/*": ["./src/styles/*"],
-            "@configs/*": ["./src/configs/*"],
-            "@lib/*": ["./src/lib/*"],
+            "@assets/*": ["./src/webapp/assets/*"],
+            "@styles/*": ["src/webapp/styles/*"],
+            "@configs/*": ["src/webapp/configs/*"],
+            "@lib/*": ["src/webapp/lib/*"],
             "@services/*": ["./src/services/*"],
             "@models/*": ["./src/models/*"],
             "@store/*": ["./src/store/*"],

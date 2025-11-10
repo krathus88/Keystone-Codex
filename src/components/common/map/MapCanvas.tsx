@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { Circle, Image as KonvaImage, Layer, Stage } from "react-konva"
 import useImage from "use-image"
 
@@ -13,7 +13,7 @@ type MapCanvasProps = {
     mapUrl: string
 }
 
-const MapCanvasComponent = ({ containerRef, mapUrl }: MapCanvasProps) => {
+export const MapCanvas = ({ containerRef, mapUrl }: MapCanvasProps) => {
     const [mapImage] = useImage(mapUrl)
 
     const [containerSize, setContainerSize] = useState({
@@ -246,6 +246,3 @@ const MapCanvasComponent = ({ containerRef, mapUrl }: MapCanvasProps) => {
         </Stage>
     )
 }
-
-export const MapCanvas = memo(MapCanvasComponent)
-MapCanvas.displayName = "MapCanvas"
