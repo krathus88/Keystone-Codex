@@ -1,0 +1,49 @@
+{
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "eslint.config.js",
+        "prettier.config.js",
+        "vite.config.js"
+    ],
+
+    "compilerOptions": {
+        "target": "ES2022",
+        "jsx": "react-jsx",
+        "module": "ESNext",
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+        "types": ["vite/client"],
+
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+
+        /* Linting */
+        "skipLibCheck": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "erasableSyntaxOnly": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "baseUrl": ".",
+
+        "paths": {
+            "@public/*": ["./public/*"],
+            "@assets/*": ["./src/assets/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@configs/*": ["./src/configs/*"],
+            "@lib/*": ["./src/lib/*"],
+            "@services/*": ["./src/services/*"],
+            "@models/*": ["./src/models/*"],
+            "@store/*": ["./src/store/*"],
+            "@routes/*": ["./src/routes/*"],
+            "@pages/*": ["./src/pages/*"],
+            "@common/*": ["./src/components/common/*"],
+            "@ui/*": ["./src/components/ui/*"],
+            "@components/*": ["./src/components/*"]
+        }
+    }
+}
